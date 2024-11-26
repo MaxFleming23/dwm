@@ -169,7 +169,7 @@ static const Key keys[] = {
 	{ MODKEY,			XK_e,          spawn,                  {.v = (const char*[]){ MAILCLIENT, NULL } } },
 	{ MODKEY|ShiftMask,		XK_e,          spawn,                  SHCMD(TERMINAL " -e abook -C ~/.config/abook/abookrc --datafile ~/.config/abook/addressbook") },
 	{ MODKEY,			XK_r,          spawn,                  {.v = (const char*[]){ TERMINAL, "-e", "lfub", NULL } } },
-	{ MODKEY|ShiftMask,		XK_r,          spawn,                  {.v = (const char*[]){ TERMINAL, "-e", "htop", NULL } } },
+	{ MODKEY|ShiftMask,		XK_r,          spawn,                  {.v = (const char*[]){ TERMINAL, "-e", "gotop", NULL } } },
 	{ MODKEY,			XK_t,          setlayout,              {.v = &layouts[0]} }, /* tile */
 	{ MODKEY|ShiftMask,		XK_t,          setlayout,              {.v = &layouts[1]} }, /* bstack */
 	{ MODKEY,			XK_y,          setlayout,              {.v = &layouts[2]} }, /* spiral */
@@ -214,8 +214,8 @@ static const Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_z,          spawn,                  SHCMD("") }, */
 	{ MODKEY,			XK_x,          incrgaps,               {.i = -3 } },
 	/* { MODKEY|ShiftMask,		XK_x,          spawn,                  SHCMD("") }, */
-	{ MODKEY,			XK_c,          spawn,                  {.v = (const char*[]){ TERMINAL, "-e", "profanity", NULL } } },
-	/* { MODKEY|ShiftMask,		XK_c,          spawn,                  SHCMD("") }, */
+	{ MODKEY,			XK_c,          spawn,                  {.v = (const char*[]){"codium", NULL } } },
+	{ MODKEY|ShiftMask,		XK_c,          spawn,                  {.v = (const char*[]){"obsidian", NULL } } },
 	/* V is automatically bound above in STACKKEYS */
 	{ MODKEY,			XK_b,          togglebar,              {0} },
 	/* { MODKEY|ShiftMask,		XK_b,          spawn,                  SHCMD("") }, */
